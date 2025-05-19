@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar Precio de Producto</title>
+    <link rel="stylesheet" href="procedimientos.css">
+</head>
+<body>
+    <div class="procedimientos-box">
+        <h1>Actualizar Precio de Producto</h1>
+        <form action="ejecutar_procedimiento.php" method="POST">
+            <input type="hidden" name="proc" value="actualizar_precio_producto">
+            <label for="producto_id">ID del Producto:</label>
+            <input type="number" id="producto_id" name="producto_id" required><br><br>
+            <label for="nuevo_precio">Nuevo Precio:</label>
+            <input type="number" id="nuevo_precio" name="nuevo_precio" step="0.01" required><br><br>
+            <input type="submit" value="Actualizar Precio">
+        </form>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="procedimientos.html" style="padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px;">Regresar a Procedimientos</a>
+        </div>
+    </div>
+</body>
+</html>

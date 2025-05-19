@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procedimientos Almacenados</title>
+    <link rel="stylesheet" href="procedimientos.css">
+</head>
+<body>
+    <div class="procedimientos-box">
+        <h1>Procedimientos Almacenados</h1>
+        <ul>
+            <li><a href="ejecutar_procedimiento.php?proc=obtener_productos" target="_blank">Obtener Productos</a></li>
+            <li><a href="ejecutar_procedimiento.php?proc=obtener_pedidos_por_usuario&user_id=1" target="_blank">Obtener Datos de Usuario Compra</a></li>
+            <li><a href="agregar_producto.html">Agregar Producto</a></li>
+            <li><a href="actualizar_precio_producto.html">Actualizar Precio de Producto</a></li>
+            <li><a href="eliminar_producto.html">Eliminar Producto</a></li>
+        </ul>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="ver_vistas.html" style="padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px;">Ver Vistas</a>
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="ver_triggers.html" style="padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px;">Ver Triggers</a>
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="ver_transacciones.html" style="padding: 10px 20px; background-color: #ffc107; color: white; text-decoration: none; border-radius: 5px;">Ver Transacciones</a>
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="registrar_empelado.html" style="padding: 10px 20px; background-color: #dc3545; color: white; text-decoration: none; border-radius: 5px;">Registrar nuevo empleado</a>
+        </div>
+    </div>
+  
+
+    <!-- Code injected by live-server -->
+    <script>
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+    </script>
+</body>
+</html>

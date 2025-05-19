@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Login</title>
+        <link rel="stylesheet" href="formulario.css">
+        <script src="validar.js"></script>
+      </head>
+      <body>
+    
+        <div class="login-box">
+          <img src="https://i.pinimg.com/236x/4a/b9/8a/4ab98a60ff9b4e94595c125c9969ae93.jpg" class="avatar" alt="Avatar Image">
+          <h1>INGRESA AQUI</h1>
+
+          
+            <FORM name="form" action="regis.php" method="post" onsubmit="return valida()">
+
+            <label >Nombre</label>
+            <input type="text"name="nombre" id="nombre" placeholder="Ingresa Nombre">
+            <label for="ap">Apellidos</label>
+            <input type="text" name="apellidos" id="apellidos" placeholder="Ingresa Apellidos">
+            
+            <label >ID</label>
+            <input type="number" id="ide" name="ide" placeholder="Ingresa ID">
+
+            <label >Correo Electronico</label>
+            <input type="text" name="correo" id="correo" placeholder="Ingresa Correo">
+
+            <label >Telefono (Movil)</label>
+            <input type="number" id="telefono" name="telefono" placeholder="Movil">
+
+            <label >Usuario</label>
+            <input type="text" name="usuario" id="usuario" placeholder="Ingresa Usuario">
+
+            <label >Contraseña</label>
+            <input type="password" name="clave" id="clave" placeholder="Ingresa Contraseña">
+            <INPUT type="submit" id="yu" value=CREAR>
+              <a href="login.html">Volver al acceso</a><br>
+            
+          </form>
+        </div>
+      </body>
+    </html>
